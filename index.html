@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vid-Gen | Video Generation Lab</title>
+    <meta
+      name="description"
+      content="Video Generation Lab (Vid-Gen) is a research thread on controllable video generation, spanning condition interpretation, instruction reasoning, and think-with-video enhancement."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top" aria-label="Vid-Gen home">
+          <span class="brand-mark"></span>
+          <span class="brand-copy">
+            <strong>Vid-Gen</strong>
+            <span>Video Generation Lab</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="#top">Overview</a>
+          <a href="#papers">Papers</a>
+          <a href="#survey">Survey</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell" id="top">
+      <section class="hero panel">
+        <div class="hero-header">
+          <h1>Video Generation Lab</h1>
+          <p class="hero-subtitle">
+            Advanced Video Generation with High-quality, Faithfulness and Physical Intelligence
+          </p>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-lead">
+              We are redefining the boundaries of video synthesis by bridging the gap between complex human intent and physical consistency. Our research focuses on interpreting multi-modal, highly sophisticated instructions to generate ultra-high-definition visual content. By embedding causal logic and world physics into the generative process, we ensure every frame is not just visually stunning, but inherently faithful to the laws of the real world.
+            </p>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-frame">
+              <img
+                src="vid-gen-idea.png"
+                alt="Concept visual for video generation with a flowing film strip"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="papers" id="papers">
+        <div class="section-head section-head-wide">
+          <p class="eyebrow">Research Papers</p>
+          <div class="paper-summary-grid">
+            <article class="paper-track paper-track-01">
+              <p class="paper-track-index">Track 01</p>
+              <h3>High-Fidelity Visual Synthesis</h3>
+              <p>
+                Synthesize cinematic-quality videos with exceptional clarity,
+                temporal stability, and ultra-high resolution.
+              </p>
+            </article>
+
+            <article class="paper-track paper-track-02">
+              <p class="paper-track-index">Track 02</p>
+              <h3>Complex Intent Interpretation</h3>
+              <p>
+                Decode intricate human intent from multi-modal and
+                sophisticated instructions into precise generative guidance.
+              </p>
+            </article>
+
+            <article class="paper-track paper-track-03">
+              <p class="paper-track-index">Track 03</p>
+              <h3>Physical and Causal Consistency</h3>
+              <p>
+                Embed structural world physics and causal logic to ensure every
+                dynamic scene respects real-world laws.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="paper-stack">
+          <article class="paper-card panel">
+            <div class="paper-head">
+              <div class="paper-meta">
+                <span>2025</span>
+                <span>Any-condition control</span>
+              </div>
+              <h3>
+                Any2Caption: Interpreting Any Condition to Caption for
+                Controllable Video Generation
+              </h3>
+              <p class="paper-tldr">
+                We propose Any2Caption, a novel framework for controllable video
+                generation from any condition by leveraging MLLMs to interpret
+                diverse inputs into dense, structured captions.
+              </p>
+            </div>
+
+            <div class="paper-body">
+              <div class="paper-copy">
+                <ul class="paper-points">
+                  <li>Decouples condition interpretation from downstream video synthesis.</li>
+                  <li>Supports text, image, video, region, motion, and camera controls in one framework.</li>
+                  <li>Plug-and-play compatibility with various off-the-shelf SOTA video generators without fine-tuning.</li>
+                  <li>Superior multi-condition reasoning that enhances both generation fidelity and physical consistency.</li>
+                  <li>Introduces Any2CapIns, a large-scale instruction-tuning dataset for any-condition captioning.</li>
+                </ul>
+
+                <div class="paper-links">
+                  <a
+                    class="button button-primary"
+                    href="https://sqwu.top/Any2Cap/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Project Page
+                  </a>
+                  <a
+                    class="button button-secondary"
+                    href="https://arxiv.org/abs/2503.24379"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Paper
+                  </a>
+                </div>
+              </div>
+
+              <div class="paper-figure">
+                <img
+                  src="Any2Caption.png"
+                  alt="Overview figure for Any2Caption"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article class="paper-card panel">
+            <div class="paper-head">
+              <div class="paper-meta">
+                <span>2025</span>
+                <span>Instruction reasoning</span>
+              </div>
+              <h3>
+                ReaDe: A Reason-then-Describe Instruction Interpreter for
+                Controllable Video Generation
+              </h3>
+              <p class="paper-tldr">
+                We propose ReaDe, a universal, model-agnostic interpreter that
+                converts raw instructions into precise, actionable
+                specifications for downstream video generators.
+              </p>
+            </div>
+
+            <div class="paper-body">
+              <div class="paper-copy">
+                <ul class="paper-points">
+                  <li>Uses a reason-then-describe pipeline to resolve ambiguity before generation.</li>
+                  <li>Combines reasoning-augmented supervision with reward-based refinement.</li>
+                  <li>Improves instruction fidelity across single-condition, multi-condition, and unseen inputs.</li>
+                </ul>
+
+                <div class="paper-links">
+                  <a
+                    class="button button-primary"
+                    href="https://sqwu.top/ReaDe/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Project Page
+                  </a>
+                  <a
+                    class="button button-secondary"
+                    href="https://arxiv.org/abs/2511.20563"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Paper
+                  </a>
+                </div>
+              </div>
+
+              <div class="paper-figure">
+                <img
+                  src="ReaDe.png"
+                  alt="Overview figure for ReaDe"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article class="paper-card panel">
+            <div class="paper-head">
+              <div class="paper-meta">
+                <span>Submitted</span>
+                <span>Benchmark + enhancement</span>
+              </div>
+              <h3>
+                Vid-PRE: Video Prompt Reasoner and Enhancer
+              </h3>
+              <p class="paper-subtitle">
+                From Evaluation to Enhancement: Benchmarking and Improving
+                Think-with-Video Reasoning for Video Generative Models
+              </p>
+              <p class="paper-tldr">
+                VWG-Bench diagnoses whether video generators truly reason under
+                rules and goals, and Vid-PRE improves this capability through a
+                model-agnostic prompt rewriter trained with text-only rewards.
+              </p>
+            </div>
+
+            <div class="paper-body">
+              <div class="paper-copy">
+                <ul class="paper-points">
+                  <li>Builds VWG-Bench to evaluate reasoning-heavy video generation across 9 dimensions and 38 tasks.</li>
+                  <li>Separates fluency, rule adherence, and goal realization with a three-level judge protocol.</li>
+                  <li>Uses Vid-PRE to rewrite prompts with text-only rewards, improving reasoning without changing generators.</li>
+                </ul>
+
+                <div class="paper-links">
+                  <a class="button button-secondary" href="#survey">
+                    Related Ongoing Direction
+                  </a>
+                </div>
+              </div>
+
+              <div class="paper-figure">
+                <img
+                  src="Vid-PRE.png"
+                  alt="Overview figure for Vid-PRE and VWG-Bench"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="survey-section" id="survey">
+        <div class="section-head section-head-wide">
+          <p class="eyebrow">Survey</p>
+          <!-- <h2>A dedicated survey work for the Vid-Gen thread</h2>
+          <p class="section-summary">
+            Separate from the research paper track, this survey section is
+            reserved for a broader synthesis of unified video foundation models
+            for comprehension and generation.
+          </p> -->
+        </div>
+
+        <article class="paper-card survey-paper-card panel">
+          <div class="survey-visual">
+            <div class="survey-visual-shell">
+              <div class="survey-visual-card">
+                <span class="survey-coming">Coming soon</span>
+                <strong>Vid-Gen Survey</strong>
+                <p>
+                  A forthcoming synthesis of unified video foundation models for
+                  comprehension and generation, spanning taxonomy, method
+                  landscape, benchmarks, and open challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="survey-copy">
+            <div class="paper-meta">
+              <span>Survey paper</span>
+              <span>In preparation</span>
+            </div>
+            <h3>Unified video foundation models for comprehension and generation</h3>
+            <!-- <p class="paper-subtitle">
+              Taxonomy, method landscape, benchmarks, and open challenges
+            </p>
+            <p class="survey-description">
+              This module is reserved for the survey paper that will organize
+              the Vid-Gen thread from a higher level: how comprehension and
+              generation can be jointly structured, how existing approaches
+              differ, which benchmark settings matter most, and where the most
+              important open opportunities lie.
+            </p> -->
+
+            <div class="survey-tags">
+              <span>Taxonomy</span>
+              <span>Method landscape</span>
+              <span>Benchmarks</span>
+              <span>Open problems</span>
+            </div>
+
+            <div class="survey-link-placeholder">
+              Link will be added when available
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-copy">
+        &copy; Copyright 2026 Vid-Gen: Video Generation Lab. All rights reserved.
+      </p>
+      <p class="footer-contact">
+        Contact:
+        <a href="https://haofei.vip/">Hao Fei</a>
+        <span>(haofei7419@gmail.com)</span>;
+        <a href="https://sqwu.top/">Shengqiong Wu</a>
+        <span>(shengqiongwu@gmail.com)</span>.
+      </p>
+    </footer>
+  </body>
+</html>
