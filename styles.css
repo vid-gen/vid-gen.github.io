@@ -532,6 +532,21 @@ h2 {
 
 .survey-visual {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.survey-teaser {
+  display: block;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.survey-teaser img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .survey-visual::after {

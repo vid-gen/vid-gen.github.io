@@ -165,13 +165,10 @@
                 <span>Instruction reasoning</span>
               </div>
               <h3>
-                ReaDe: A Reason-then-Describe Instruction Interpreter for
-                Controllable Video Generation
+                ReaDe: A Reason-then-Describe Instruction Interpreter for Controllable Video Generation
               </h3>
               <p class="paper-tldr">
-                We propose ReaDe, a universal, model-agnostic interpreter that
-                converts raw instructions into precise, actionable
-                specifications for downstream video generators.
+                We propose ReaDe, a universal, model-agnostic interpreter that converts raw instructions into precise, actionable specifications for downstream video generators.
               </p>
             </div>
 
@@ -217,20 +214,17 @@
           <article class="paper-card panel">
             <div class="paper-head">
               <div class="paper-meta">
-                <span>Submitted</span>
+                <span>ECCV 2026</span>
                 <span>Benchmark + enhancement</span>
               </div>
               <h3>
                 Vid-PRE: Video Prompt Reasoner and Enhancer
               </h3>
               <p class="paper-subtitle">
-                From Evaluation to Enhancement: Benchmarking and Improving
-                Think-with-Video Reasoning for Video Generative Models
+                From Evaluation to Enhancement: Benchmarking and Improving Think-with-Video Reasoning for Video Generative Models
               </p>
               <p class="paper-tldr">
-                VWG-Bench diagnoses whether video generators truly reason under
-                rules and goals, and Vid-PRE improves this capability through a
-                model-agnostic prompt rewriter trained with text-only rewards.
+                VWG-Bench diagnoses whether video generators truly reason under rules and goals, and Vid-PRE improves this capability through a model-agnostic prompt rewriter trained with text-only rewards.
               </p>
             </div>
 
@@ -243,8 +237,21 @@
                 </ul>
 
                 <div class="paper-links">
-                  <a class="button button-secondary" href="#survey">
-                    Related Ongoing Direction
+                  <a
+                    class="button button-primary"
+                    href="https://huggingface.co/datasets/KlingTeam/VWG-Bench"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Dataset
+                  </a>
+                  <a
+                    class="button button-secondary"
+                    href="https://arxiv.org/abs/2609.11242"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Paper
                   </a>
                 </div>
               </div>
@@ -253,6 +260,51 @@
                 <img
                   src="Vid-PRE.png"
                   alt="Overview figure for Vid-PRE and VWG-Bench"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </article>
+
+          <article class="paper-card panel">
+            <div class="paper-head">
+              <div class="paper-meta">
+                <span>NeurIPS 2026</span>
+                <span>Physically consistent generation</span>
+              </div>
+              <h3>
+                Seeing the Unseen: Unified Visible–Invisible Motion for Physically Consistent Video Generation
+              </h3>
+              <p class="paper-tldr">
+                Seeing the Unseen predicts physical dynamics from a single image and guides video generation with both visible and initially unseen motion trajectories.
+              </p>
+            </div>
+
+            <div class="paper-body">
+              <div class="paper-copy">
+                <ul class="paper-points">
+                  <li>Learns physical dynamics with a Particle-based Graph Dynamics Simulator to predict plausible 3D trajectories.</li>
+                  <li>Unifies reference-visible and future-emergent motion through a Visible–Invisible Motion Field.</li>
+                  <li>Models occluded dynamics and structured interactions for events such as collisions and domino chains.</li>
+                </ul>
+
+                <div class="paper-links">
+                  <a
+                    class="button button-primary"
+                    href="https://vid-gen.github.io/seeing_the_unseen/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Project Page
+                  </a>
+                </div>
+              </div>
+
+              <div class="paper-figure">
+                <img
+                  src="seeing-the-unseen.jpg"
+                  alt="Seeing the Unseen teaser showing generated video with reference-visible and future-emergent motion trajectories"
                   loading="lazy"
                   decoding="async"
                 />
@@ -275,25 +327,29 @@
 
         <article class="paper-card survey-paper-card panel">
           <div class="survey-visual">
-            <div class="survey-visual-shell">
-              <div class="survey-visual-card">
-                <span class="survey-coming">Coming soon</span>
-                <strong>Vid-Gen Survey</strong>
-                <p>
-                  A forthcoming synthesis of unified video foundation models for
-                  comprehension and generation, spanning taxonomy, method
-                  landscape, benchmarks, and open challenges.
-                </p>
-              </div>
-            </div>
+            <a
+              class="survey-teaser"
+              href="https://vid-gen.github.io/video-world-model-survey/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="vid-gen-survey.png"
+                alt="Survey overview: reading, writing, sharing, and interacting with the world through video"
+                width="1800"
+                height="802"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
           </div>
 
           <div class="survey-copy">
             <div class="paper-meta">
               <span>Survey paper</span>
-              <span>In preparation</span>
             </div>
-            <h3>Unified video foundation models for comprehension and generation</h3>
+            <h3>Reading, Writing, Sharing, and Interacting with the World through Video</h3>
+            <p class="paper-subtitle">A Survey Toward Unified Video World Models</p>
             <!-- <p class="paper-subtitle">
               Taxonomy, method landscape, benchmarks, and open challenges
             </p>
@@ -312,8 +368,15 @@
               <span>Open problems</span>
             </div>
 
-            <div class="survey-link-placeholder">
-              Link will be added when available
+            <div class="paper-links">
+              <a
+                class="button button-primary"
+                href="https://vid-gen.github.io/video-world-model-survey/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Project Page
+              </a>
             </div>
           </div>
         </article>
